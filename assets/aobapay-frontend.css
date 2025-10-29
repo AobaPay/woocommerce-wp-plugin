@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
+:root {
+    --aoba-green: #00B69B;
+    --aoba-dark-green: #00A98F;
+    --aoba-primary: rgb(0, 46, 201);
+    --aoba-light-gray: #F7F7F7;
+    --aoba-gray: #EAEAEA;
+    --aoba-dark-gray: #888888;
+    --aoba-black: #1E1E1E;
+    --aoba-white: #FFFFFF;
+    --aoba-font: "Bricolage Grotesque", sans-serif;
+}
+
+.aobapay-container {
+    max-width: 600px;
+    margin: 3em auto;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    font-family: var(--aoba-font);
+    text-align: center;
+}
+
+.aobapay-card {
+    background-color: var(--aoba-white);
+    border-radius: 16px;
+    padding: 32px;
+    border: 2px solid #f3f3f3;
+    transition: all 0.3s ease;
+}
+
+.aobapay-header {
+    margin-bottom: 24px;
+}
+
+.aobapay-logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 16px;
+}
+
+.aobapay-header h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--aoba-black);
+    margin: 0 0 8px 0;
+}
+
+.aobapay-header p {
+    font-size: 16px;
+    color: var(--aoba-dark-gray);
+    margin: 0;
+    line-height: 1.5;
+}
+
+.aobapay-payment-area {
+    margin-top: 24px;
+}
+
+.aobapay-qr-code {
+    margin-bottom: 5px;
+}
+
+.aobapay-qr-code img {
+    width: 100%;
+    max-width: 240px;
+    border-radius: 12px;
+    border: 1px solid var(--aoba-gray);
+    padding: 12px;
+    background: var(--aoba-white);
+}
+
+.aobapay-copy-paste {
+    /* position: relative; */
+    width: 100%;
+}
+
+#aobapay-brcode {
+    width: 100%;
+    padding: 14px 50px 14px 16px;
+    border: 1px solid var(--aoba-gray);
+    border-radius: 10px;
+    font-family: monospace;
+    font-size: 14px;
+    height: 100px;
+    background-color: var(--aoba-light-gray);
+    color: var(--aoba-dark-gray);
+    resize: none;
+    text-align: left;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    box-sizing: border-box;
+}
+
+#aobapay-copy-button {
+    transform: translateY(-50%);
+    background-color: var(--aoba-primary);
+    color: var(--aoba-white);
+    border: none;
+    border-radius: 8px;
+    padding: 14px 24px;
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#aobapay-copy-button:hover {
+    background-color: var(--aoba-green);
+}
+
+#aobapay-copy-button.aobapay-copied {
+    background-color: var(--aoba-dark-green);
+    content: "Copiado!";
+}
+
+#aobapay-status {
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.aobapay-status-pending {
+    background-color: #FFFBEB;
+    color: #B45309;
+    margin-bottom: 10px;
+}
+
+.aobapay-status-paid {
+    background-color: #F0FDF4;
+    color: #166534;
+    margin-bottom: 10px;
+}
+
+.aobapay-status-expired {
+    background-color: #FEF2F2;
+    color: #991B1B;
+    margin-bottom: 10px;
+}
+
+.aobapay-footer {
+    margin-top: 24px;
+    font-size: 13px;
+    color: #A0A0A0;
+}
+
+.aobapay-footer svg {
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    fill: #A0A0A0;
+}
